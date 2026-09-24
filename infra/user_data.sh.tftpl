@@ -1,0 +1,32 @@
+#!/bin/bash
+set -euxo pipefail
+
+exec > >(tee /var/log/beacoder-bootstrap.log | logger -t beacoder-bootstrap -s 2>/dev/console) 2>&1
+
+dnf install -y nodejs unzip
+mkdir -p /opt/beacoder-mock
+aws s3 cp s3://${deployment_bucket}/backend/backend.zip /tmp/backend.zip
+unzip -q -o /tmp/backend.zip -d /opt/beacoder-mock
+cd /opt/beacoder-mock
+npm ci --omit=dev
+
+cat >/etc/systemd/system/beacoder-mock.service <<'SERVICE'
+[Unit]
+Description=Beacoder mock backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/beacoder-mock
+ExecStart=/usr/bin/node /opt/beacoder-mock/app.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+SERVICE
+
+systemctl daemon-reload
+systemctl enable --now beacoder-mock.service

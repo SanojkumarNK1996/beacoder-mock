@@ -1,0 +1,12 @@
+[
+  {"id":"aws-1","difficulty":"easy","question":"What does AWS stand for?","options":["Amazon Web Services","Advanced Web Systems","Amazon Website Software","Application Web Service"],"correctAnswer":0},
+  {"id":"aws-2","difficulty":"easy","question":"Which AWS service provides virtual servers?","options":["Amazon EC2","Amazon S3","Amazon RDS","Amazon Route 53"],"correctAnswer":0},
+  {"id":"aws-3","difficulty":"easy","question":"Which AWS service is primarily used for object storage?","options":["Amazon S3","Amazon EC2","Amazon VPC","Amazon CloudWatch"],"correctAnswer":0},
+  {"id":"aws-4","difficulty":"easy","question":"Which AWS service provides managed DNS?","options":["Amazon Route 53","Amazon SQS","Amazon EBS","Amazon IAM"],"correctAnswer":0},
+  {"id":"aws-5","difficulty":"easy","question":"What does IAM help you manage in AWS?","options":["Users, roles, permissions, and access policies","Only virtual machine disk space","Only DNS records","Only application logs"],"correctAnswer":0},
+  {"id":"aws-6","difficulty":"medium","question":"What is an AWS Region?","options":["A geographical area containing multiple isolated Availability Zones","A single virtual machine","A user permission group","A type of S3 object"],"correctAnswer":0},
+  {"id":"aws-7","difficulty":"medium","question":"What is an Availability Zone?","options":["An isolated location within an AWS Region designed for independent infrastructure","A billing account","A DNS record","A programming language"],"correctAnswer":0},
+  {"id":"aws-8","difficulty":"medium","question":"Which AWS service provides monitoring metrics and logs?","options":["Amazon CloudWatch","Amazon S3","Amazon Cognito","Amazon ECR"],"correctAnswer":0},
+  {"id":"aws-9","difficulty":"medium","question":"What is a security group attached to an EC2 instance used for?","options":["Controlling inbound and outbound network traffic with rules","Storing application source code","Creating database tables","Managing domain registration"],"correctAnswer":0},
+  {"id":"aws-10","difficulty":"medium","question":"Which AWS service is designed for managed relational databases?","options":["Amazon RDS","Amazon S3","Amazon Lambda","Amazon VPC"],"correctAnswer":0}
+]

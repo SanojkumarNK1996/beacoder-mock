@@ -1,0 +1,18 @@
+[
+  {"id":"css-1","difficulty":"easy","question":"What does CSS stand for?","options":["Creative Style Sheets","Cascading Style Sheets","Computer Style Syntax","Colorful Style Sheets"],"correctAnswer":1},
+  {"id":"css-2","difficulty":"easy","question":"Which property changes text color?","options":["font-color","text-color","color","foreground"],"correctAnswer":2},
+  {"id":"css-3","difficulty":"easy","question":"Which selector targets an element with id='app'?","options":[".app","#app","app","*app"],"correctAnswer":1},
+  {"id":"css-4","difficulty":"medium","question":"Which layout system is designed mainly for one-dimensional layouts?","options":["Float","Grid","Flexbox","Position"],"correctAnswer":2},
+  {"id":"css-5","difficulty":"medium","question":"Which property controls the space inside an element, between its content and border?","options":["margin","padding","gap","spacing"],"correctAnswer":1},
+  {"id":"css-6","difficulty":"medium","question":"What does box-sizing: border-box do?","options":["It removes the border","It includes padding and border in the declared width and height","It makes every box square","It changes a block into an inline element"],"correctAnswer":1},
+  {"id":"css-7","difficulty":"hard","question":"What is the main effect of position: absolute on an element?","options":["It is positioned relative to its nearest positioned ancestor and removed from normal flow","It always stays fixed to the browser window","It becomes a flex container","It cannot overlap other elements"],"correctAnswer":0},
+  {"id":"css-8","difficulty":"hard","question":"Which selector has the highest specificity?","options":[".card button","button:hover","#app button","button"],"correctAnswer":2},
+  {"id":"css-9","difficulty":"medium","question":"Which unit is relative to the root element's font size?","options":["em","rem","vh","%"],"correctAnswer":1},
+  {"id":"css-10","difficulty":"medium","question":"What does display: none do?","options":["Hides the element and removes it from layout","Makes the element transparent but keeps its space","Moves it behind other elements","Disables only its text"],"correctAnswer":0},
+  {"id":"css-11","difficulty":"medium","question":"Which property controls the order of flex items?","options":["flex-order","order","item-index","flow-order"],"correctAnswer":1},
+  {"id":"css-12","difficulty":"medium","question":"What does the CSS gap property control in a flex or grid layout?","options":["Space between layout items","The element's outer border","The text line height","The viewport width"],"correctAnswer":0},
+  {"id":"css-13","difficulty":"hard","question":"What does minmax(200px, 1fr) mean in a CSS Grid track?","options":["The track is at least 200px and can grow to one fractional share","The track is exactly 200px","The track can never exceed 200px","The track is hidden below 200px"],"correctAnswer":0},
+  {"id":"css-14","difficulty":"hard","question":"Which pseudo-class selects an element when it is the first child of its parent?","options":[":first","::first-child",":first-child",".first-child"],"correctAnswer":2},
+  {"id":"css-15","difficulty":"hard","question":"What does a CSS custom property beginning with -- represent?","options":["A reusable custom property accessed with var()","A private JavaScript variable","A browser-only selector","A required animation name"],"correctAnswer":0},
+  {"id":"css-16","difficulty":"hard","question":"Which declaration creates a stacking context in many common cases?","options":["z-index: 1 on a positioned element","color: red","font-size: 1rem","margin: auto"],"correctAnswer":0}
+]
